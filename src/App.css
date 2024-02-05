@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333; /* Example background color */
+}
+
+.navbar .rightSide {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .rightSide a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .rightSide a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  text-align: center;
+}
+
+section {
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
