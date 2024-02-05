@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../assets/pdsLogo.png";
 import { HashLink as Link } from 'react-router-hash-link'; // This will need to be installed
+import "../styles/Navbar.css"; // Make sure you have the correct path to your CSS file
 
 function Navbar() {
   return (

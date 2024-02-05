@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+body, .App {
+  background-color: #593299; /* Dark purple background color for the whole page */
+  color: #EEE7FA; /* General text color for the whole page */
+  font-family: 'Archivo', sans-serif; /* Set the default font for the whole page */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure full height */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #333; /* Example background color */
+  background-color: #593299; /* Updated navbar background color to match */
 }
 
 .navbar .rightSide {
@@ -21,18 +32,70 @@
 }
 
 .App {
-  text-align: center;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-section {
-  padding: 50px;
-  margin: 20px;
-  border: 1px solid #ccc;
+main {
+  padding-top: 60px; /* Adjust based on your navbar height */
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+section#home {
+  padding-left: 40px;
+  background-color: #593299; /* This is now redundant since body has the color, but kept if section-specific styling is needed */
+}
+
+section#home h1 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #FFFFFF; /* Set color for the event title */
+  font-size: 3em;
+}
+
+section#home p {
+  margin: 0.5em 0; /* Add space between paragraphs */
+}
+
+/* Specific color and font for the date and event type */
+section#home p:nth-of-type(1) {
+  margin-bottom: 1em;
+  color: #CAB2F2;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+}
+
+/* Specific color for the main description text */
+section#home p:nth-of-type(2),
+section#home p:nth-of-type(3),
+section#home p:nth-of-type(4) {
+  color: #EEE7FA;
+  font-size: 1.5em;
+}
+
+section#home button {
+  background-color: #EEE7FA; /* Background color for the button */
+  color: #593299; /* Text color for the button */
+  font-size: 1.5em;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1em;
+  cursor: pointer;
+  font-family: 'Archivo', sans-serif;
+  border-radius: 20px; /* Makes the button rounded */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color and background-color */
+}
+
+section#home button:hover {
+  background-color: #280c55; /* New background color for the button on hover */
+  color: #EEE7FA; /* New text color for the button on hover */
+}
+
+/* Smaller and specific color for the application deadline */
+section#home p:last-child {
+  color: #CAB2F2;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1em; /* Smaller font size */
+  font-style: italic;
+  margin-top: 2em;
 }

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #593299;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  font-family: 'Archivo', sans-serif; /* Ensure Archivo font is used */
+}
+
+.navbar .leftSide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align logo to the left */
+  padding-left: 30px; /* Adjust padding to your liking */
+}
+
+.navbar .leftSide img {
+  height: 80%; /* Adjust logo size, maintaining aspect ratio */
+}
+
+.navbar .rightSide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align links to the right */
+  padding-right: 30px; /* Maintain padding for symmetry */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px; /* Add padding for a larger clickable area */
+  margin: 0 10px; /* Adjust spacing between links */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover {
+  color: #593299; /* Darker color for text on hover */
+  background-color: #EEE7FA; /* Lighter background on hover */
+  border-radius: 5px; /* Slightly rounded corners for hover background */
+}
+
+/* Hidden button for mobile view */
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Ensure it's still not displayed */
+}
+
+/* Media query for mobile view, showing the button and adjusting navbar */
+@media only screen and (max-width: 768px) {
+  .navbar .rightSide {
+    justify-content: space-between; /* Distribute space evenly */
+  }
+
+  .navbar .rightSide button {
+    display: block; /* Show the button */
+    margin-left: auto; /* Push the button to the right */
+  }
+
+  .navbar .rightSide a {
+    display: none; /* Hide the links */
+  }
+
+  .navbar .rightSide button:hover {
+    transform: scale(1.1); /* Scale up the button slightly on hover */
+  }
+}
