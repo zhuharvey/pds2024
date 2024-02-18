@@ -1,8 +1,16 @@
 import React from "react";
 import { HashRouter as Router } from "react-router-dom";
+import Create from "./assets/create.svg";
+import Innovate from "./assets/innovate.svg";
+import Learn from "./assets/learn.svg";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import { Link } from "react-router-dom";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import { Typography } from "@mui/material";
+import { ArrowDownward } from "@mui/icons-material";
 
 function App() {
   const openInNewTab = (url) => {
@@ -16,7 +24,7 @@ function App() {
         <main>
           <section className="section" id="home">
             <h1>Product Design Sprint 2024</h1>
-            <p>
+            <p className="purple">
               March 8-10, 2024 | Hybrid Event - Virtual & Western University
             </p>
             <br />
@@ -36,7 +44,32 @@ function App() {
           </section>
           <section className="section" id="about">
             <h2>About</h2>
-            <p>This is the about section.</p>
+            <div className="cards">
+              <div className="card">
+                <img src={Learn} />
+                <h2>Learn</h2>
+                <p>
+                  Attend workshops from industry pros, network with event
+                  partners, and get support from mentors.
+                </p>
+              </div>
+              <div className="card">
+                <img src={Create} />
+                <h2>Create</h2>
+                <p>
+                  In teams of up to 4, build a prototype using design thinking
+                  and UX design skills.
+                </p>
+              </div>
+              <div className="card">
+                <img src={Innovate} />
+                <h2>Innovate.</h2>
+                <p>
+                  Turn your brilliant ideas into tangible projects and pitch
+                  your solutions.
+                </p>
+              </div>
+            </div>
           </section>
           <section className="section" id="partners">
             <h2>Partners</h2>
@@ -44,7 +77,22 @@ function App() {
           </section>
           <section className="section" id="faq">
             <h2>FAQ</h2>
-            <p>This is the FAQ section.</p>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ArrowDownwardIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                <Typography>Accordion 1</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+                  eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
           </section>
           <section className="section" id="contact">
             <h2>Contact Us</h2>

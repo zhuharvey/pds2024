@@ -86,6 +86,11 @@ main {
   .rightSide {
     display: none !important;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 .menu img {
@@ -123,10 +128,15 @@ main {
   .menu {
     display: none;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }
 
 #home {
-  height: 70vh;
+  height: 65vh;
   padding: 10vh 0;
 }
 
@@ -138,27 +148,23 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
+  color: #fff;
 }
 
 section#home p {
   margin: 0.25em 0; /* Add space between paragraphs */
 }
 
-/* Specific color and font for the date and event type */
-section#home p:nth-of-type(1) {
-  margin-bottom: 1em;
-  color: #cab2f2;
-  font-family: "Inter", sans-serif;
+/* Specific color for the main description text */
+p {
+  color: #ffffff;
   font-size: 20px;
+  font-family: "Inter", sans-serif;
 }
 
-/* Specific color for the main description text */
-section#home p:nth-of-type(2),
-section#home p:nth-of-type(3),
-section#home p:nth-of-type(4) {
-  color: #eee7fa;
-  font-size: 20px;
+.purple {
+  color: #cab2f2;
 }
 
 button {
@@ -168,7 +174,7 @@ button {
   font-weight: 600;
   border: none;
   padding: 16px 24px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   cursor: pointer;
   font-family: "Archivo", sans-serif;
   border-radius: 8px;
@@ -187,4 +193,10 @@ section#home p:last-child {
   font-size: 1em; /* Smaller font size */
   font-style: italic;
   margin-top: 2em;
+}
+
+.card {
+  padding: 24px 24px 16px;
+  background-color: #6940ad;
+  border-radius: 8px;
 }
