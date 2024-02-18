@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter:wght@400;700&display=swap");
 
-body, .App {
+body,
+.App {
   background-color: #593299; /* Dark purple background color for the whole page */
-  color: #EEE7FA; /* General text color for the whole page */
-  font-family: 'Archivo', sans-serif; /* Set the default font for the whole page */
+  color: #eee7fa; /* General text color for the whole page */
+  font-family: "Archivo", sans-serif; /* Set the default font for the whole page */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   height: 100%; /* Ensure full height */
@@ -12,9 +13,19 @@ body, .App {
 .navbar {
   display: flex;
   justify-content: space-between;
+  gap: 4px;
   align-items: center;
-  padding: 0 20px;
   background-color: #593299; /* Updated navbar background color to match */
+  margin: 0 24px;
+}
+
+.navbar img {
+  height: 100px;
+}
+
+.navbar .leftSide {
+  padding: 0;
+  margin-left: -16px;
 }
 
 .navbar .rightSide {
@@ -25,10 +36,27 @@ body, .App {
 .navbar .rightSide a {
   color: white;
   text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 16px;
 }
 
 .navbar .rightSide a:hover {
-  text-decoration: underline;
+  background-color: #a07add;
+}
+
+.button {
+  background-color: #7d4fc7;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.button:hover {
+  background-color: #a07add !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+  padding: 12px 16px;
 }
 
 .App {
@@ -41,60 +69,121 @@ main {
   padding-top: 60px; /* Adjust based on your navbar height */
 }
 
-section#home {
-  padding-left: 40px;
-  background-color: #593299; /* This is now redundant since body has the color, but kept if section-specific styling is needed */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    max-width: 90vw !important;
+  }
+  .section {
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 24px;
+  }
+  .rightSide {
+    display: none !important;
+  }
 }
 
-section#home h1 {
+.menu img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #4d2a87;
+  width: calc(100%);
+  gap: 16px;
+  padding: 48px 0px;
+}
+
+.menu-list img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .section {
+    margin: 0 24px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+#home {
+  height: 70vh;
+  padding: 10vh 0;
+}
+
+h1 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: #FFFFFF; /* Set color for the event title */
+  color: #ffffff; /* Set color for the event title */
   font-size: 3em;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 section#home p {
-  margin: 0.5em 0; /* Add space between paragraphs */
+  margin: 0.25em 0; /* Add space between paragraphs */
 }
 
 /* Specific color and font for the date and event type */
 section#home p:nth-of-type(1) {
   margin-bottom: 1em;
-  color: #CAB2F2;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.5em;
+  color: #cab2f2;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 /* Specific color for the main description text */
 section#home p:nth-of-type(2),
 section#home p:nth-of-type(3),
 section#home p:nth-of-type(4) {
-  color: #EEE7FA;
-  font-size: 1.5em;
+  color: #eee7fa;
+  font-size: 20px;
 }
 
-section#home button {
-  background-color: #EEE7FA; /* Background color for the button */
-  color: #593299; /* Text color for the button */
-  font-size: 1.5em;
+button {
+  background-color: #7d4fc7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
   border: none;
-  padding: 10px 20px;
+  padding: 16px 24px;
   margin-top: 1em;
   cursor: pointer;
-  font-family: 'Archivo', sans-serif;
-  border-radius: 20px; /* Makes the button rounded */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color and background-color */
+  font-family: "Archivo", sans-serif;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-section#home button:hover {
-  background-color: #280c55; /* New background color for the button on hover */
-  color: #EEE7FA; /* New text color for the button on hover */
+button:hover {
+  background-color: #a07add;
+  color: #eee7fa; /* New text color for the button on hover */
 }
 
 /* Smaller and specific color for the application deadline */
 section#home p:last-child {
-  color: #CAB2F2;
-  font-family: 'Archivo', sans-serif;
+  color: #cab2f2;
+  font-family: "Archivo", sans-serif;
   font-size: 1em; /* Smaller font size */
   font-style: italic;
   margin-top: 2em;
