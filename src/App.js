@@ -5,12 +5,6 @@ import Innovate from "./assets/innovate.svg";
 import Learn from "./assets/learn.svg";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import { Link } from "react-router-dom";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import { Typography } from "@mui/material";
-import { ArrowDownward } from "@mui/icons-material";
 
 function App() {
   const openInNewTab = (url) => {
@@ -77,22 +71,6 @@ function App() {
           </section>
           <section className="section" id="faq">
             <h2>FAQ</h2>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ArrowDownwardIcon />}
-                aria-controls="panel1-content"
-                id="panel1-header"
-              >
-                <Typography>Accordion 1</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
           </section>
           <section className="section" id="contact">
             <h2>Contact Us</h2>
