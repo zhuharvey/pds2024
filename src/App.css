@@ -67,10 +67,6 @@ body,
   margin: 0 auto;
 }
 
-main {
-  padding-top: 60px; /* Adjust based on your navbar height */
-}
-
 @media only screen and (max-width: 600px) {
   .navbar {
     max-width: calc(90vw) !important;
@@ -92,7 +88,7 @@ main {
   }
 
   #home {
-    padding: 4vh 24px 10vh;
+    padding: 0 24px 10vh;
   }
   .menu {
     display: flex;
@@ -105,6 +101,29 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+  .prizes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .prize {
+    padding: 8px 12px 8px;
+  }
+  .prize p {
+    font-size: 16px !important;
+  }
+
+  .prize-alt {
+    padding: 8px 12px 8px;
+  }
+
+  .prize-alt p {
+    font-size: 16px !important;
+  }
+
+  .prizes-alt {
+    gap: 12px;
   }
 }
 
@@ -152,7 +171,7 @@ main {
   }
   #home {
     height: 65vh;
-    padding: 8vh 10vw 0;
+    padding: 12vh 10vw 0;
   }
   .menu {
     display: none;
@@ -160,6 +179,21 @@ main {
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .prizes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .prize {
+    padding: 16px 24px 16px;
+  }
+
+  .prize-alt {
+    padding: 24px;
+  }
+  .prizes-alt {
     gap: 24px;
   }
 }
@@ -224,6 +258,29 @@ section#home p:last-child {
   padding: 24px 24px 16px;
   background-color: #6940ad;
   border-radius: 8px;
+}
+
+.prize {
+  background-color: #6940ad;
+  border-radius: 8px;
+}
+
+.prize-alt {
+  border: 2px solid #7d4fc7;
+  border-radius: 8px;
+}
+
+.prizes-alt {
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.prize p,
+.prize h2,
+.prize-alt p,
+.prize-alt h2 {
+  margin: 8px 0;
 }
 
 h3 {
