@@ -100,7 +100,7 @@ function App() {
           </section> */}
           <section className="section" id="faq">
             <h2>FAQ</h2>
-            <Accordion>
+            <Accordion allowToggle>
               <AccordionItem>
                 <h3>
                   <AccordionButton>
