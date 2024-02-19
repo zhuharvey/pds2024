@@ -43,7 +43,9 @@ function App() {
                 </p>
                 <button
                   role="link"
-                  onClick={() => openInNewTab("https://forms.gle/naFRnnEqMeDTCf6P7")}
+                  onClick={() =>
+                    openInNewTab("https://forms.gle/naFRnnEqMeDTCf6P7")
+                  }
                 >
                   Apply Now!
                 </button>
@@ -85,7 +87,30 @@ function App() {
           </section>
           <section className="section" id="prizes">
             <h2>Prizes</h2>
-            <p>Over $2K in Prizes! Stay tuned for details...</p>
+            <div className="prizes" style={{ alignItems: "end" }}>
+              <div className="prize" style={{ height: "120px" }}>
+                <p>2nd Place</p>
+                <h2>$500</h2>
+              </div>
+              <div className="prize" style={{ height: "160px" }}>
+                <p>1st Place</p>
+                <h2>$1000</h2>
+              </div>
+              <div className="prize" style={{ height: "80px" }}>
+                <p>3rd Place</p>
+                <h2>$250</h2>
+              </div>
+            </div>
+            <div className="prizes-alt">
+              <div className="prize-alt">
+                <p>Most Innovative Solution</p>
+                <h2>$150</h2>
+              </div>
+              <div className="prize-alt">
+                <p>Best Beginner Project</p>
+                <h2>$100</h2>
+              </div>
+            </div>
           </section>
           <section className="section" id="partners">
             <h2>Partners</h2>
@@ -110,12 +135,14 @@ function App() {
                     <AccordionIcon />
                   </AccordionButton>
                 </h3>
-                <AccordionPanel pb={4}>
-                  Product Design Sprint (PDS) is a hackathon-style design case
-                  competition. Teams of up to 4 compete in designing the best
-                  solution to a given problem applying design thinking and UX/UI
-                  design skills.
-                </AccordionPanel>
+                <p>
+                  <AccordionPanel pb={4}>
+                    Product Design Sprint (PDS) is a hackathon-style design case
+                    competition. Teams of up to 4 compete in designing the best
+                    solution to a given problem applying design thinking and
+                    UX/UI design skills.
+                  </AccordionPanel>
+                </p>
               </AccordionItem>
               <AccordionItem>
                 <h3>
@@ -126,12 +153,14 @@ function App() {
                     <AccordionIcon />
                   </AccordionButton>
                 </h3>
-                <AccordionPanel pb={4}>
-                  None! PDS is completely beginner-friendly. We have many
-                  workshops and resources to teach you everything you need to
-                  compete. Most of our participants are new to UX design and
-                  Figma!
-                </AccordionPanel>
+                <p>
+                  <AccordionPanel pb={4}>
+                    None! PDS is completely beginner-friendly. We have many
+                    workshops and resources to teach you everything you need to
+                    compete. Most of our participants are new to UX design and
+                    Figma!
+                  </AccordionPanel>
+                </p>
               </AccordionItem>
 
               <AccordionItem>
@@ -143,13 +172,15 @@ function App() {
                     <AccordionIcon />
                   </AccordionButton>
                 </h3>
-                <AccordionPanel pb={4}>
-                  Nope! You can join us from anywhere across the world and even
-                  compete completely virtually! However, we do encourage
-                  participants to join us in-person on March 9 for in-person
-                  networking, resume review, food, and other activities -- it's
-                  more fun!
-                </AccordionPanel>
+                <p>
+                  <AccordionPanel pb={4}>
+                    Nope! You can join us from anywhere across the world and
+                    even compete completely virtually! However, we do encourage
+                    participants to join us in-person on March 9 for in-person
+                    networking, resume review, food, and other activities --
+                    it's more fun!
+                  </AccordionPanel>
+                </p>
               </AccordionItem>
             </Accordion>
           </section>
@@ -161,7 +192,9 @@ function App() {
             </p>
             <button
               role="link"
-              onClick={() => openInNewTab("https://forms.gle/naFRnnEqMeDTCf6P7")}
+              onClick={() =>
+                openInNewTab("https://forms.gle/naFRnnEqMeDTCf6P7")
+              }
             >
               Apply Now!
             </button>
