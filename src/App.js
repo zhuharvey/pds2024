@@ -22,10 +22,10 @@ function App() {
               March 8-10, 2024 | Hybrid Event - Virtual & Western University
             </p>
             <br />
-            <p>
+            <p style={{ maxWidth: "600px" }}>
               Develop your product management, design thinking, and prototyping
+              skills in a fun weekend-long competition.
             </p>
-            <p>skills in a fun weekend-long competition.</p>
             <br />
             <p>Open to all levels. Participate from anywhere in the world.</p>
             <button
@@ -67,14 +67,27 @@ function App() {
           </section>
           <section className="section" id="partners">
             <h2>Partners</h2>
-            <p>This is the partners section.</p>
+            <p>Thank you to our partners.</p>
           </section>
+          {/* <section className="section" id="partners">
+            <h2>Judges & Mentors</h2>
+            <p>Thank you to our judges and mentors from companies like...</p>
+          </section> */}
           <section className="section" id="faq">
             <h2>FAQ</h2>
           </section>
-          <section className="section" id="contact">
-            <h2>Contact Us</h2>
-            <p>This is the contact section.</p>
+          <section className="section footer" id="contact">
+            <h2>Are You Ready?</h2>
+            <p>
+              Free food, workshops, and networking in a fun-filled 36-hour
+              competition.
+            </p>
+            <button
+              role="link"
+              onClick={() => openInNewTab("https://monkeytype.com/")}
+            >
+              Apply Now!
+            </button>
           </section>
         </main>
       </div>
