@@ -23,9 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "add-domain": "echo 'wfnpds.com' > ./build/CNAME && gh-pages -d build",
-    "deploy": "npm run wfnpds.com && gh-pages -d build",
-    "bd": "npm run build && npm run deploy",
+    "add-domain": "echo 'wfnpds.com' > ./build/CNAME",
+    "deploy": "npm run build && npm run add-domain && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
