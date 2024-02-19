@@ -28,7 +28,7 @@ function Navbar() {
         <Link smooth to="#faq">
           FAQ
         </Link>
-        <Link className="button" smooth to="https://monkeytype.com/">
+        <Link className="button" smooth to="https://forms.gle/naFRnnEqMeDTCf6P7">
           Apply Now!
         </Link>
       </div>
@@ -47,7 +47,7 @@ function Navbar() {
           <Link smooth to="#faq">
             FAQ
           </Link>
-          <Link className="button" smooth to="https://monkeytype.com/">
+          <Link className="button" smooth to="https://forms.gle/naFRnnEqMeDTCf6P7">
             Apply Now!
           </Link>
         </div>

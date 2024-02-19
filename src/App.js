@@ -161,7 +161,7 @@ function App() {
             </p>
             <button
               role="link"
-              onClick={() => openInNewTab("https://monkeytype.com/")}
+              onClick={() => openInNewTab("https://forms.gle/naFRnnEqMeDTCf6P7")}
             >
               Apply Now!
             </button>
