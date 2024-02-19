@@ -17,7 +17,6 @@ body,
   gap: 4px;
   align-items: center;
   background-color: #59329980; /* Updated navbar background color to match */
-  padding: 0 24px;
   position: sticky;
   top: 0;
 }
@@ -75,16 +74,25 @@ main {
 @media only screen and (max-width: 600px) {
   .navbar {
     max-width: calc(90vw) !important;
+    padding: 0 24px;
   }
   .section {
-    padding: 0 24px;
+    padding: 100px 24px;
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 80px;
   }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  img {
+    max-width: 100vw;
+  }
+
   #home {
-    padding: 10vh 24px 0 !important;
+    padding: 4vh 24px 10vh;
   }
   .menu {
     display: flex;
@@ -115,7 +123,7 @@ main {
   top: 0;
   left: 0;
   background: #4d2a87;
-  width: calc(100%);
+  width: 100%;
   gap: 16px;
   padding: 48px 0px;
 }
@@ -130,10 +138,21 @@ main {
 }
 
 @media only screen and (min-width: 600px) {
+  .navbar {
+    padding: 0 5vw;
+  }
   .section {
-    padding: 0 calc(50vw - 600px);
-    padding-bottom: 120px;
-    padding-top: 40px;
+    padding: 100px 10vw;
+  }
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
+  #home {
+    height: 65vh;
+    padding: 8vh 10vw 0;
   }
   .menu {
     display: none;
@@ -143,11 +162,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-}
-
-#home {
-  height: 65vh;
-  padding: 12vh calc(50vw - 600px) 0;
 }
 
 h1 {
@@ -194,6 +208,7 @@ button {
 button:hover {
   background-color: #a07add;
   color: #eee7fa; /* New text color for the button on hover */
+  cursor: pointer;
 }
 
 /* Smaller and specific color for the application deadline */

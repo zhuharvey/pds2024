@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 
 .navbar {
-  width: 100%;
   height: 100px;
   background-color: #593299;
   display: flex;
   flex-direction: row;
   align-items: center; /* Center items vertically */
-  font-family: 'Archivo', sans-serif; /* Ensure Archivo font is used */
+  font-family: "Archivo", sans-serif; /* Ensure Archivo font is used */
 }
 
 .navbar .leftSide {
@@ -42,7 +41,7 @@
 
 .navbar a:hover {
   color: #593299; /* Darker color for text on hover */
-  background-color: #EEE7FA; /* Lighter background on hover */
+  background-color: #eee7fa; /* Lighter background on hover */
   border-radius: 5px; /* Slightly rounded corners for hover background */
 }
 
@@ -56,7 +55,7 @@
 }
 
 /* Media query for mobile view, showing the button and adjusting navbar */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .navbar .rightSide {
     justify-content: space-between; /* Distribute space evenly */
   }

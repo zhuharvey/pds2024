@@ -19,6 +19,9 @@ function Navbar() {
         <Link smooth to="#about">
           About
         </Link>
+        <Link smooth to="#prizes">
+          Prizes
+        </Link>
         <Link smooth to="#partners">
           Partners
         </Link>
@@ -34,6 +37,9 @@ function Navbar() {
           <img src={Close} onClick={() => setShowMenu(false)} />
           <Link smooth to="#about">
             About
+          </Link>
+          <Link smooth to="#prizes">
+            Prizes
           </Link>
           <Link smooth to="#partners">
             Partners
