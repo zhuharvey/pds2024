@@ -5,6 +5,9 @@ import Innovate from "./assets/innovate.svg";
 import Learn from "./assets/learn.svg";
 import Hero from "./assets/pds-hero.png";
 import Navbar from "./components/Navbar";
+import Partners from "./assets/partners.svg";
+import JudgesMentors from "./assets/judgesmentors.svg";
+
 import "./App.css";
 import {
   Accordion,
@@ -114,15 +117,16 @@ function App() {
           </section>
           <section className="section" id="partners">
             <h2>Partners</h2>
-            <p>
-              Thank you to our partners for making PDS possible! Come back soon
-              for our partner list!
-            </p>
+            <p>Thank you to our partners for making PDS possible!</p>
+            <div>
+              <img src={Partners} />
+            </div>
           </section>
-          {/* <section className="section" id="partners">
+          <section className="section" id="partners">
             <h2>Judges & Mentors</h2>
             <p>Thank you to our judges and mentors from companies like...</p>
-          </section> */}
+            <img src={JudgesMentors} />
+          </section>
           <section className="section" id="faq">
             <h2>FAQ</h2>
             <Accordion allowToggle>
