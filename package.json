@@ -1,5 +1,5 @@
 {
-  "homepage": "http://zhuharvey.github.io/pds2024",
+  "homepage": "https://zhuharvey.github.io/",
   "name": "pds2024",
   "version": "0.1.0",
   "private": true,
@@ -22,9 +22,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "add-domain": "echo 'wfnpds.com' > ./build/CNAME",
+    "deploy": "npm run build && npm run add-domain && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
