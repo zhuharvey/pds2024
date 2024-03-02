@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f085dfa.css",
-    "main.js": "/static/js/main.5caaa1e1.js",
+    "main.css": "/static/css/main.997d5977.css",
+    "main.js": "/static/js/main.62e43c9d.js",
     "static/js/592.7a5fccac.chunk.js": "/static/js/592.7a5fccac.chunk.js",
+    "static/media/partners.svg": "/static/media/partners.9c17981d72e6cf1c537527f86a1bc804.svg",
     "static/media/pds-hero.png": "/static/media/pds-hero.931297b04c6ce7d323c0.png",
+    "static/media/judgesmentors.svg": "/static/media/judgesmentors.519c8c2a2c78b6f736306d2ba18af50f.svg",
     "static/media/pds_logo.svg": "/static/media/pds_logo.e68da142ac8e6b718b1be56a801488f7.svg",
     "static/media/create.svg": "/static/media/create.60fb02d36618a8568bd2be6813bafe47.svg",
     "static/media/innovate.svg": "/static/media/innovate.1b63427b98e17e6720a127ec1efe1a62.svg",
@@ -11,12 +13,12 @@
     "index.html": "/index.html",
     "static/media/close.svg": "/static/media/close.7dfadc3b28f33ad15f7a81836a6fb374.svg",
     "static/media/menu.svg": "/static/media/menu.510eda5f29d349c03894e3910f2bd9fd.svg",
-    "main.0f085dfa.css.map": "/static/css/main.0f085dfa.css.map",
-    "main.5caaa1e1.js.map": "/static/js/main.5caaa1e1.js.map",
+    "main.997d5977.css.map": "/static/css/main.997d5977.css.map",
+    "main.62e43c9d.js.map": "/static/js/main.62e43c9d.js.map",
     "592.7a5fccac.chunk.js.map": "/static/js/592.7a5fccac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f085dfa.css",
-    "static/js/main.5caaa1e1.js"
+    "static/css/main.997d5977.css",
+    "static/js/main.62e43c9d.js"
   ]
 }
